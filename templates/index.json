@@ -16,10 +16,15 @@
     "hero": {
       "type": "hero",
       "settings": {}
+    },
+    "what-is-it": {
+      "type": "what-is-it",
+      "settings": {}
     }
   },
   "order": [
     "hero",
-    "main"
+    "main",
+    "what-is-it"
   ]
 }

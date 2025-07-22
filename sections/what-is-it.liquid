@@ -1,0 +1,45 @@
+<div class="overflow-hidden py-10">
+  <div class="px-4 max-w-2x1 mx-auto text-center">
+    <div class="text-center">
+      <h1 class="h1 mb-3">What Is Conqueroats?</h1>
+      <h2 class="h2">
+        It’s oats — turned into a shake with protein,<br>
+        fiber, vitamins, minerals, and super foods.
+      </h2>
+    </div>
+    {% comment %} TODO: Implement Splide {% endcomment %}
+    <div class="flex justify-center py-10 gap-5 lg:gap-10">
+        {% for product in collections.powder.products %}
+            <div>{{ product.featured_image | image_url: width: 196, height: 350 | image_tag }}</div>
+        {% endfor %}
+    </div>
+    {% comment %} TODO: Make button a snippet {% endcomment %}
+    <div class="flex justify-center">
+      <a
+        href="{{ routes.all_products_collection_url }}"
+        class="button +large +green text-xl min-w-[200px]!"
+        ><span>Shop Now</span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="22"
+          height="22"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="inline ml-1 feather feather-chevron-right"
+        >
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "tag": "section"
+}
+{% endschema %}
