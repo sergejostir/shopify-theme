@@ -20,11 +20,16 @@
     "what-is-it": {
       "type": "what-is-it",
       "settings": {}
-    }
+    },
+    "why-we-better": {
+      "type": "why-we-better",
+      "settings": {}
+    },
   },
   "order": [
     "hero",
     "main",
-    "what-is-it"
+    "what-is-it",
+    "why-we-better"
   ]
 }

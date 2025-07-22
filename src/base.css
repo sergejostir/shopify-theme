@@ -9,6 +9,7 @@
   --color-co-green-light: #6b8e23;
   --color-co-green-dark: #4b5320;
   --color-co-gray-light-1: #f5f5f5;
+  --color-co-gray-dark-1: #333333;
 }
 
 @layer components {
