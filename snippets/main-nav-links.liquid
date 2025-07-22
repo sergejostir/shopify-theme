@@ -1,0 +1,18 @@
+{% doc %}
+  Renders a main navigation links.
+
+  @param {string} handle - The menu to be rendered
+
+  @example
+  {% render 'main-nav-links', handle: 'main-menu' %}
+{% enddoc %}
+
+<div class="main-nav-links">
+  {% for link in linklists[handle].links %}
+    <a href="{{ link.url }}">
+      <div class="link-text font-semibold">
+        {{ link.title }}
+      </div>
+    </a>
+  {% endfor %}
+</div>

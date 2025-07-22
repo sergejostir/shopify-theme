@@ -8,6 +8,7 @@
 @theme {
   --color-co-green-light: #6b8e23;
   --color-co-green-dark: #4b5320;
+  --color-co-gray-light-1: #f5f5f5;
 }
 
 @layer components {
@@ -51,5 +52,45 @@
     padding-block: calc(var(--spacing) * 3);
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
+
+  /* main-nav-links.liquid */
+ .main-nav-links {
+    width: 50%;
+    max-width: var(--container-sm);
+    justify-content: center;
+    align-items: center;
+    gap: calc(var(--spacing) * 10);
+    font-size: var(--text-lg);
+    line-height: var(--tw-leading, var(--text-lg--line-height));
+    display: none;
+  }
+  @media (width>=64rem) {
+    .main-nav-links {
+      display: flex;
+    }
+  }
+  .main-nav-links a {
+    padding-block: calc(var(--spacing) * 3);
+    text-align: center;
+    white-space: nowrap;
+  }
+  @media (width>=64rem) {
+    .main-nav-links a {
+      justify-content: center;
+      display: flex;
+    }
+  }
+  .main-nav-links a > .link-text {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+  }
+  .main-nav-links a.active > .link-text {
+    margin-bottom: calc(var(--spacing) * -0.5);
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 2px;
+    border-color: var(--color-green-500);
   }
 }
