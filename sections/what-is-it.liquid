@@ -9,9 +9,9 @@
     </div>
     {% comment %} TODO: Implement Splide {% endcomment %}
     <div class="flex justify-center py-10 gap-5 lg:gap-10">
-        {% for product in collections.powder.products %}
-            <div>{{ product.featured_image | image_url: width: 196, height: 350 | image_tag }}</div>
-        {% endfor %}
+      {% for product in collections.powder.products %}
+        <div>{{ product.featured_image | image_url: width: 196, height: 350 | image_tag }}</div>
+      {% endfor %}
     </div>
     {% comment %} TODO: Make button a snippet {% endcomment %}
     <div class="flex justify-center">
@@ -40,6 +40,7 @@
 
 {% schema %}
 {
-  "tag": "section"
+  "tag": "section",
+  "class": "bg-co-gray-light-1"
 }
 {% endschema %}
