@@ -1,5 +1,6 @@
 {
     "emmet.includeLanguages": {
         "liquid": "html"
-    }
+    },
+    "editor.formatOnSave": true
 }
